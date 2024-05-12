@@ -1,0 +1,86 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1.0">
+  <title>Document</title>
+  <link rel="stylesheet" href="../css/index.css">
+  <link rel="stylesheet" href="../css/swiper-bundle.min.css">
+  <script src="../js/swiper-bundle.min.js"></script>
+</head>
+
+<body>
+  <!--导航栏-->
+  <div class="nav">
+    <ul>
+      <li><a href="../html/index.html">Jay首页</a></li>
+      <li><a href="../html/人物简介.html">个人简介</a></li>
+      <li><a href="../html/歌曲鉴赏.html">歌曲鉴赏</a></li>
+      <li><a href="../html/主要作品.html">主要作品</a></li>
+      <li><a href="../html/Jay专辑.html">Jay专辑</a></li>
+      <li><a href="登录.html">登录</a></li>
+      <div class="nav-box"></div>
+    </ul>
+  </div>
+
+  <!--轮播图-->
+  <div class="swiper">
+    <div class="swiper-wrapper">
+      <div class="swiper-slide"><img src="../img/1622004348-srchttp___www.jpg" /></div>
+      <div class="swiper-slide"><img src="../img/jay1.jpg" /></div>
+      <div class="swiper-slide"><img src="../img/周杰伦封面.jpg" /></div>
+      <div class="swiper-slide"><img src="../img/1.jpg" width="1920" /></div>
+      <div class="swiper-slide"><img src="../img/周杰伦封面2.jpg" width="1920" /></div>
+    </div>
+    <div class="swiper-pagination"></div>
+    <div class="swiper-button-prev"></div>
+    <div class="swiper-button-next"></div>
+  </div>
+
+  <div class="style">Jay Chou</div>
+
+  <!--滚轮查看-->
+  <div class="shell">
+    <div><img src="../img/jay.jpg" alt=""></div>
+    <div><img src="../img/范特西.jpg" alt=""></div>
+    <div><img src="../img/八度空间.jpg" alt=""></div>
+    <div><img src="../img/叶惠美.jpg" alt=""></div>
+    <div><img src="../img/七里香.jpg" alt=""></div>
+    <div><img src="../img/十一月的肖邦.jpg" alt=""></div>
+    <div><img src="../img/依然范特西.jpg" alt=""></div>
+    <div><img src="../img/我很忙.jpg" alt=""></div>
+    <div><img src="../img/魔杰座.jpg" alt=""></div>
+    <div><img src="../img/跨时代.jpg" alt=""></div>
+    <div><img src="../img/惊叹号.jpg" alt=""></div>
+    <div><img src="../img/12新作.jpg" alt=""></div>
+    <div><img src="../img/哎哟，不错哦.jpg" alt=""></div>
+    <div><img src="../img/周杰伦的床边故事1.jpg" alt=""></div>
+    <div><img src="../img/最伟大的作品.jpg" alt=""></div>
+  </div>
+
+  <!--底部-->
+  <div class="footer">
+    <div style="font-size: 30px; color: rgb(255, 165, 180);">
+      Made By Minghui Jin
+    </div>
+  </div>
+
+  <!--用Swiper库创建轮播图效果-->
+  <script>
+    var mySwiper = new Swiper('.swiper', {
+      //设置导航按钮
+      navigation: {
+        nextEl: '.swiper-button-next',
+        prevEl: '.swiper-button-prev',
+      },
+      //循环播放
+      loop: true,
+      autoplay: true,
+      //滑动播放
+      effect: 'slide',
+    });
+  </script>
+</body>
+
+</html>

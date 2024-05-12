@@ -1,0 +1,217 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+    list-style: none;
+    text-decoration: none;
+}
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background-image: url(../img/back.jpeg);
+    background-size: cover;
+    position: relative;
+    flex-direction: column;
+}
+body::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.3);
+    z-index: -1;
+  }
+.Maxbox{
+    display: flex;
+    top: 0;
+    flex-direction: column;
+    position: absolute;
+    width: 100%;
+    height: 50px;
+}
+.nav {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 50px; 
+    position: absolute;
+    top: 0;
+    background-image: linear-gradient(to top, #cfd9df 0%, #e2ebf0 100%);
+    margin: auto;
+}
+
+.nav ul {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    right: 5%;
+}
+
+.nav ul .nav-box {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: calc((100%/6)*1);
+    height: 10px;
+    transition: 0.5s;
+}
+
+.nav ul li {
+    width: 100%;
+    text-align: center;
+}
+
+.nav ul li a:hover {
+    color: black;
+    font-weight: bold;
+    text-shadow: gray 2px 2px;
+
+}
+
+.nav ul li a {
+    color: #000;
+    font: 100 30px;
+    display: block;
+    font-size: 18px;
+    width: 100%;
+    height: 100%;
+    line-height: 70px;
+}
+
+.nav ul li:nth-child(1):hover~.nav-box {
+    left: calc(100%/6*0);
+    background-color: #B22222;
+}
+
+.nav ul li:nth-child(2):hover~.nav-box {
+    left: calc(100%/6*1);
+    background-color: #FFA500;
+}
+
+.nav ul li:nth-child(3):hover~.nav-box {
+    left: calc(100%/6*2);
+    background-color: #FFFF00;
+}
+
+.nav ul li:nth-child(4):hover~.nav-box {
+    left: calc(100%/6*3);
+    background-color: #7CFC00;
+}
+
+.nav ul li:nth-child(5):hover~.nav-box {
+    left: calc(100%/6*4);
+    background-color: #1E90FF;
+}
+
+.nav ul li:nth-child(6):hover~.nav-box {
+    left: calc(100%/6*5);
+    background-color: #8B008B;
+}
+
+.box1{
+    position: relative;
+    width: 100%;
+    height: 800px;
+    top: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.container {
+    position: absolute;
+    width: 100%;
+    top: 300px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.container .card {
+    position: absolute;
+    width: 240px;
+    height: 360px;
+    border-radius: 8px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: rgba(0, 0, 0, 0);
+    font-size: 8em;
+    font-weight: 700;
+    border: 10px solid rgba(0, 0, 0, .1);
+    transition: .5s;
+    transform-origin: 50% 100%;
+}
+
+.container:hover .card {
+    transform: rotate(calc(var(--i)*8deg)) translate(calc(var(--i)*120px), -60px);
+    box-shadow: 0 15px 50px rgba(0, 0, 0, .25);
+    color: rgba(0, 0, 0, .25);
+    cursor: pointer;
+}
+.container:active .card:not(:active){
+    filter: brightness(20%);
+}
+.container .card:active {
+    translate: calc(var(--i)*20px) -50px;
+    z-index: 555;
+}
+.box2{
+    position: relative;
+    width: 100%;
+    height: 500px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-image: linear-gradient(to top, #cfd9df 0%, #e2ebf0 100%);
+}
+.content{
+    display: flex;
+    position: absolute;
+    top: 0;
+    width: 100%;
+    height: 60px;
+    
+}
+.simply h4{
+	font-size:1.6em;
+	  padding: 0.3em 0;
+}
+.simply h4 a{
+	color:black;
+	text-decoration:none;
+}
+.simply h4 a:hover{
+	color:blue;
+}
+.simply p{
+	color:#787878;
+	font-size:1em;
+	line-height:1.7em;
+	margin-bottom: 1em;
+}
+.simply {
+  padding: 0.5em 0 0;
+}
+.topicbox{
+    position: relative;
+    width: 100%;
+    height: 80px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #00FFFF;
+    background-image: linear-gradient(to top, #cfd9df 0%, #e2ebf0 100%);
+    text-align: center;
+    font-size: 40px;
+    font-family: 隶书;
+    text-shadow: 2px 3px 1px #4d4d4d;
+}
+
+
